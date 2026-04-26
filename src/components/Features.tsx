@@ -37,7 +37,7 @@ export function Features() {
   return (
     <section id="keunggulan" className="py-20 sm:py-28 bg-secondary">
       <div className="max-w-7xl mx-auto px-5 sm:px-6">
-        <div className="text-center max-w-2xl mx-auto mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-14 reveal">
           <span className="text-xs sm:text-sm tracking-[0.2em] uppercase text-accent font-semibold">
             Mengapa AZR
           </span>
@@ -55,11 +55,11 @@ export function Features() {
           {features.map((f, i) => (
             <div
               key={f.title}
-              className="premium-card p-6 sm:p-8 group"
-              style={{ animationDelay: `${i * 0.08}s` }}
+              className="premium-card tilt-hover p-6 sm:p-8 group reveal"
+              style={{ transitionDelay: `${i * 0.08}s` }}
             >
               <div
-                className="w-14 h-14 rounded-xl flex items-center justify-center text-accent-foreground mb-5 transition-transform group-hover:scale-110"
+                className="w-14 h-14 rounded-xl flex items-center justify-center text-accent-foreground mb-5 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-6"
                 style={{ background: "var(--gradient-gold)", boxShadow: "var(--shadow-gold)" }}
               >
                 <f.icon size={26} strokeWidth={2.2} />

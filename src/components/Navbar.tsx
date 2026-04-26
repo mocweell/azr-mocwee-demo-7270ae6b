@@ -6,6 +6,7 @@ const links = [
   { href: "#keunggulan", label: "Keunggulan" },
   { href: "#armada", label: "Armada" },
   { href: "#hiace", label: "Hiace & Luxury" },
+  { href: "#lokasi", label: "Lokasi" },
   { href: "#kontak", label: "Kontak" },
 ];
 

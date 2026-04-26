@@ -23,7 +23,7 @@ export function HiaceFleet() {
       />
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-12 reveal">
           <span className="text-xs sm:text-sm tracking-[0.2em] uppercase text-accent font-semibold">
             Kategori 2
           </span>
@@ -49,8 +49,10 @@ export function HiaceFleet() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
-          {hiaceCars.map((car) => (
-            <CarCard key={car.name} car={car} accent="gold" />
+          {hiaceCars.map((car, i) => (
+            <div key={car.name} className="reveal" style={{ transitionDelay: `${i * 0.08}s` }}>
+              <CarCard car={car} accent="gold" />
+            </div>
           ))}
         </div>
       </div>
