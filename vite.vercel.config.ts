@@ -15,7 +15,7 @@ export default defineConfig({
     outDir: "dist/vercel",
     emptyOutDir: true,
     rollupOptions: {
-      input: "index.vercel.html",
+      input: "index.html",
     },
   },
   resolve: {
