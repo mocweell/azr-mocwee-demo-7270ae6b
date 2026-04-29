@@ -1,10 +1,10 @@
-import { Users, Clock } from "lucide-react";
+import { Users, UserCheck } from "lucide-react";
 
 export type Car = {
   name: string;
   seats: string;
-  price: string;
-  overtime: string;
+  price?: string;
+  overtime?: string;
   image: string;
   badge?: string;
 };
@@ -13,7 +13,7 @@ const waNumber = "6285591151510";
 
 export function CarCard({ car, accent = "navy" }: { car: Car; accent?: "navy" | "gold" }) {
   const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
-    `Halo AZR Rentcar, saya ingin memesan ${car.name} (${car.price}/hari). Mohon info ketersediaannya.`,
+    `Halo AZR Rentcar, saya ingin info & ketersediaan unit ${car.name}. Terima kasih.`,
   )}`;
 
   return (
@@ -35,9 +35,7 @@ export function CarCard({ car, accent = "navy" }: { car: Car; accent?: "navy" | 
             {car.badge}
           </span>
         )}
-        <div
-          className="absolute top-3 right-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 backdrop-blur text-xs font-semibold text-primary"
-        >
+        <div className="absolute top-3 right-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 backdrop-blur text-xs font-semibold text-primary">
           <Users size={13} />
           {car.seats}
         </div>
@@ -48,21 +46,22 @@ export function CarCard({ car, accent = "navy" }: { car: Car; accent?: "navy" | 
           {car.name}
         </h3>
 
-        <div className="mt-3 flex items-baseline gap-2">
+        <div className="mt-3 flex flex-wrap items-center gap-2">
           <span
-            className={`font-display font-bold text-2xl sm:text-3xl ${
-              accent === "gold" ? "gold-text" : "text-primary"
+            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold ${
+              accent === "gold"
+                ? "bg-accent/15 text-accent"
+                : "bg-primary/10 text-primary"
             }`}
           >
-            {car.price}
+            <UserCheck size={13} />
+            Termasuk Driver Profesional
           </span>
-          <span className="text-xs sm:text-sm text-muted-foreground">/hari</span>
         </div>
 
-        <div className="mt-2 flex items-center gap-1.5 text-xs text-muted-foreground">
-          <Clock size={12} />
-          <span>Overtime: {car.overtime}</span>
-        </div>
+        <p className="mt-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+          Unit terawat & nyaman, siap antar Anda dengan pengalaman berkendara berkelas.
+        </p>
 
         <a
           href={waLink}
@@ -82,7 +81,7 @@ export function CarCard({ car, accent = "navy" }: { car: Car; accent?: "navy" | 
                 }
           }
         >
-          Pesan Sekarang
+          Cek Harga via WhatsApp
         </a>
       </div>
     </article>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import azrLogo from "@/assets/azr-logo.png";
 
 const links = [
   { href: "#beranda", label: "Beranda" },
@@ -30,14 +31,19 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
-        <a href="#beranda" className="flex items-center gap-2">
+        <a href="#beranda" className="flex items-center gap-2.5">
           <span
-            className={`inline-flex items-center justify-center w-10 h-10 rounded-lg font-display font-bold text-sm ${
-              scrolled ? "bg-primary text-primary-foreground" : "bg-accent text-accent-foreground"
+            className={`inline-flex items-center justify-center rounded-lg overflow-hidden transition-all ${
+              scrolled ? "bg-white p-1 shadow-sm" : "bg-white/95 p-1"
             }`}
-            style={{ background: scrolled ? "var(--gradient-navy)" : "var(--gradient-gold)" }}
           >
-            AZR
+            <img
+              src={azrLogo}
+              alt="AZR Rentcar logo"
+              width={40}
+              height={40}
+              className="w-9 h-9 sm:w-10 sm:h-10 object-contain"
+            />
           </span>
           <div className={`leading-tight ${scrolled ? "text-foreground" : "text-white"}`}>
             <div className="font-display font-semibold text-base sm:text-lg">AZR Rentcar</div>
