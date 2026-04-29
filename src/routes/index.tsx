@@ -43,6 +43,12 @@ export const Route = createFileRoute("/")({
       { property: "og:locale", content: "id_ID" },
       { property: "og:site_name", content: "AZR Rentcar Jakarta" },
       { property: "og:url", content: "https://azr-mocwee-demo.lovable.app" },
+      { property: "og:image", content: "https://azr-mocwee-demo.lovable.app/og-banner.jpg" },
+      { property: "og:image:secure_url", content: "https://azr-mocwee-demo.lovable.app/og-banner.jpg" },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:width", content: "1536" },
+      { property: "og:image:height", content: "1024" },
+      { property: "og:image:alt", content: "AZR Rentcar Jakarta — Solusi Sewa Mobil Tanpa Ribet" },
 
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "AZR Rentcar Jakarta — Sewa Mobil Mewah + Driver" },
@@ -51,6 +57,8 @@ export const Route = createFileRoute("/")({
         content:
           "Unit 2023+, driver profesional, layanan rental mobil premium di Jakarta. Konsultasi via WhatsApp.",
       },
+      { name: "twitter:image", content: "https://azr-mocwee-demo.lovable.app/og-banner.jpg" },
+      { name: "twitter:image:alt", content: "AZR Rentcar Jakarta — Armada Premium" },
     ],
     links: [
       { rel: "canonical", href: "https://azr-mocwee-demo.lovable.app" },
