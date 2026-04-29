@@ -24,7 +24,6 @@ const includes = [
   "Mobil Unit 2023+",
   "Driver Profesional",
   "BBM Penuh",
-  "Tol & Parkir",
   "Air Mineral Gratis",
 ];
 
