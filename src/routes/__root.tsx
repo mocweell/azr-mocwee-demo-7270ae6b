@@ -39,8 +39,8 @@ export const Route = createRootRoute({
       { name: "twitter:site", content: "@Lovable" },
       { name: "twitter:title", content: "AZR - RentCar Jabodetabek" },
       { name: "twitter:description", content: "AZR Rentcar Jakarta Elite offers premium car rentals in Jakarta with modern vehicles and experienced drivers." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d2582a28-675a-424b-b5b6-2bdf1cc39b69/id-preview-aa59c856--a53b743f-0b6d-408b-983c-0c3362c3a892.lovable.app-1777215468099.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d2582a28-675a-424b-b5b6-2bdf1cc39b69/id-preview-aa59c856--a53b743f-0b6d-408b-983c-0c3362c3a892.lovable.app-1777215468099.png" },
+      { property: "og:image", content: "https://azr-mocwee-demo.lovable.app/og-banner.jpg" },
+      { name: "twitter:image", content: "https://azr-mocwee-demo.lovable.app/og-banner.jpg" },
     ],
     links: [
       {
