@@ -42,7 +42,7 @@ export function HiaceFleet() {
           >
             <Info size={18} className="text-accent shrink-0 mt-0.5" />
             <p className="text-xs sm:text-sm text-white/85">
-              Sudah termasuk Mobil + Driver + BBM. <strong>Belum termasuk</strong> Tol, Parkir,
+              Sudah termasuk Mobil + Driver Profesional + BBM. <strong>Belum termasuk</strong> Parkir
               dan Uang Makan Driver. Jam kerja driver 05.00 – 23.00 WIB.
             </p>
           </div>
