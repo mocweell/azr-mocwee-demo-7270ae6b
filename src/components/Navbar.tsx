@@ -32,22 +32,20 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
         <a href="#beranda" className="flex items-center gap-2.5">
-          <span
-            className={`inline-flex items-center justify-center rounded-lg overflow-hidden transition-all ${
-              scrolled ? "bg-white p-1 shadow-sm" : "bg-white/95 p-1"
+          <img
+            src={azrLogo}
+            alt="AZR Rentcar Jakarta — Sewa Mobil Mewah"
+            width={48}
+            height={48}
+            className={`w-10 h-10 sm:w-12 sm:h-12 object-contain transition-all ${
+              scrolled
+                ? "[filter:brightness(0)_saturate(100%)_invert(16%)_sepia(38%)_saturate(1200%)_hue-rotate(210deg)]"
+                : "[filter:brightness(0)_invert(1)] drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]"
             }`}
-          >
-            <img
-              src={azrLogo}
-              alt="AZR Rentcar logo"
-              width={40}
-              height={40}
-              className="w-9 h-9 sm:w-10 sm:h-10 object-contain"
-            />
-          </span>
+          />
           <div className={`leading-tight ${scrolled ? "text-foreground" : "text-white"}`}>
-            <div className="font-display font-semibold text-base sm:text-lg">AZR Rentcar</div>
-            <div className="text-[10px] sm:text-xs tracking-[0.2em] uppercase opacity-80">Jakarta</div>
+            <div className="font-display font-semibold text-base sm:text-lg tracking-wide">AZR Rentcar</div>
+            <div className="text-[10px] sm:text-xs tracking-[0.25em] uppercase opacity-80">Jakarta</div>
           </div>
         </a>
 
