@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import azrLogo from "@/assets/azr-logo.png";
 
 const links = [
   { href: "#beranda", label: "Beranda" },
