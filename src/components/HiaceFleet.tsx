@@ -1,13 +1,13 @@
 import { CarCard, type Car } from "./CarCard";
 import { Info } from "lucide-react";
-import hiace from "@/assets/car-hiace.jpg";
-import hiaceLuxury from "@/assets/car-hiace-luxury.jpg";
+import hiacepremio from "@/assets/car-hiace-premio.jpg";
+import hiacecommuter from "@/assets/car-hiace-commuter.jpg";
 
 const hiaceCars: Car[] = [
-  { name: "Hiace Commuter", seats: "15 Kursi", price: "Rp 1.500.000", overtime: "100rb/jam", image: hiace },
-  { name: "Hiace Premio", seats: "12 Kursi", price: "Rp 1.800.000", overtime: "100rb/jam", image: hiace },
-  { name: "Hiace Commuter Luxury", seats: "9-10 Kursi", price: "Rp 2.000.000", overtime: "100rb/jam", image: hiaceLuxury, badge: "Luxury" },
-  { name: "Hiace Premio Luxury", seats: "8-9 Kursi", price: "Rp 2.500.000", overtime: "100rb/jam", image: hiaceLuxury, badge: "Premium" },
+  { name: "Hiace Commuter", seats: "15 Kursi", price: "Rp 1.500.000", overtime: "100rb/jam", image: hiacecommuter },
+  { name: "Hiace Premio", seats: "12 Kursi", price: "Rp 1.800.000", overtime: "100rb/jam", image: hiacepremio },
+  { name: "Hiace Commuter Luxury", seats: "9-10 Kursi", price: "Rp 2.000.000", overtime: "100rb/jam", image: hiacecommuter, badge: "Luxury" },
+  { name: "Hiace Premio Luxury", seats: "8-9 Kursi", price: "Rp 2.500.000", overtime: "100rb/jam", image: hiacepremio, badge: "Premium" },
 ];
 
 export function HiaceFleet() {
