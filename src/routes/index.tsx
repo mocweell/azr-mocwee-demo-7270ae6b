@@ -42,9 +42,9 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "id_ID" },
       { property: "og:site_name", content: "AZR Rentcar Jakarta" },
-      { property: "og:url", content: "https://azr-mocwee-demo.lovable.app" },
-      { property: "og:image", content: "https://azr-mocwee-demo.lovable.app/og-banner.jpg" },
-      { property: "og:image:secure_url", content: "https://azr-mocwee-demo.lovable.app/og-banner.jpg" },
+      { property: "og:url", content: "https://azr-rentcar.com" },
+      { property: "og:image", content: "https://raw.githubusercontent.com/mocweell/azr-mocwee-demo-7270ae6b/refs/heads/main/public/og-banner.jpg?token=GHSAT0AAAAAAD4AM444YK2SBNW7SGPSTRKI2PVQ6DQ" },
+      { property: "og:image:secure_url", content: "https://raw.githubusercontent.com/mocweell/azr-mocwee-demo-7270ae6b/refs/heads/main/public/og-banner.jpg?token=GHSAT0AAAAAAD4AM444YK2SBNW7SGPSTRKI2PVQ6DQ" },
       { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:width", content: "1536" },
       { property: "og:image:height", content: "1024" },
@@ -57,11 +57,11 @@ export const Route = createFileRoute("/")({
         content:
           "Unit 2023+, driver profesional, layanan rental mobil premium di Jakarta. Konsultasi via WhatsApp.",
       },
-      { name: "twitter:image", content: "https://azr-mocwee-demo.lovable.app/og-banner.jpg" },
+      { name: "twitter:image", content: "https://raw.githubusercontent.com/mocweell/azr-mocwee-demo-7270ae6b/refs/heads/main/public/og-banner.jpg?token=GHSAT0AAAAAAD4AM444YK2SBNW7SGPSTRKI2PVQ6DQ" },
       { name: "twitter:image:alt", content: "AZR Rentcar Jakarta — Armada Premium" },
     ],
     links: [
-      { rel: "canonical", href: "https://azr-mocwee-demo.lovable.app" },
+      { rel: "canonical", href: "https://azr-rentcar.com" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
