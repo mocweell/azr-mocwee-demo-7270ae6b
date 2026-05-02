@@ -25,7 +25,7 @@ export function CarCard({ car, accent = "navy" }: { car: Car; accent?: "navy" | 
           loading="lazy"
           width={1024}
           height={768}
-          className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105"
+          className="w-full h-full object-contain p-0 scale-110 transition-transform duration-700 group-hover:scale-115"
         />
         {car.badge && (
           <span
