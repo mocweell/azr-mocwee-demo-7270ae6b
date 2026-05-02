@@ -18,14 +18,14 @@ export function CarCard({ car, accent = "navy" }: { car: Car; accent?: "navy" | 
 
   return (
     <article className="premium-card overflow-hidden flex flex-col group">
-      <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
+      <div className="relative aspect-[4/3] overflow-hidden bg-white flex items-center justify-center">
         <img
           src={car.image}
           alt={`${car.name} - AZR Rentcar Jakarta`}
           loading="lazy"
           width={1024}
           height={768}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className="w-full h-full object-contain p-2 transition-transform duration-700 group-hover:scale-105"
         />
         {car.badge && (
           <span
