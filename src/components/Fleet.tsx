@@ -3,19 +3,25 @@ import { CheckCircle2 } from "lucide-react";
 
 import avanza from "@/assets/car-avanza.jpg";
 import veloz from "@/assets/car-veloz.jpg";
+import xpander from "@/assets/car-xpander.jpg";
+import ertiga from "@/assets/car-ertiga.jpg";
 import innova from "@/assets/car-innova.jpg";
 import zenix from "@/assets/car-zenix.jpg";
 import fortuner from "@/assets/car-fortuner.jpg";
+import pajero from "@/assets/car-pajero.jpg";
 import alphard from "@/assets/car-alphard.jpg";
 
 const allInCars: Car[] = [
   { name: "New Avanza", seats: "7 Kursi", price: "Rp 800.000", overtime: "50rb/jam", image: avanza },
   { name: "Veloz Q", seats: "7 Kursi", price: "Rp 1.000.000", overtime: "50rb/jam", image: veloz },
+  { name: "Xpander Cross", seats: "7 Kursi", price: "Rp 1.000.000", overtime: "50rb/jam", image: xpander },
+  { name: "All New Ertiga Hybrid", seats: "7 Kursi", price: "Rp 950.000", overtime: "50rb/jam", image: ertiga },
   { name: "Innova Reborn", seats: "7 Kursi", price: "Rp 1.200.000", overtime: "50rb/jam", image: innova },
   { name: "Innova Zenix G", seats: "7 Kursi", price: "Rp 1.300.000", overtime: "50rb/jam", image: zenix },
   { name: "Innova Zenix V", seats: "7 Kursi", price: "Rp 1.400.000", overtime: "50rb/jam", image: zenix, badge: "Populer" },
   { name: "Innova Zenix Q", seats: "7 Kursi", price: "Rp 1.600.000", overtime: "100rb/jam", image: zenix },
   { name: "Fortuner", seats: "7 Kursi", price: "Rp 1.500.000", overtime: "100rb/jam", image: fortuner },
+  { name: "New Pajero Sport Dakar", seats: "7 Kursi", price: "Rp 1.700.000", overtime: "100rb/jam", image: pajero },
   { name: "Alphard Gen 3 Facelift", seats: "7 Kursi", price: "Rp 3.400.000", overtime: "150rb/jam", image: alphard, badge: "Luxury" },
   { name: "New Alphard Gen 4", seats: "7 Kursi", price: "Rp 4.500.000", overtime: "200rb/jam", image: alphard, badge: "Flagship" },
 ];
