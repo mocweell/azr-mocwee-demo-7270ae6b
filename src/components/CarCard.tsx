@@ -21,7 +21,7 @@ export function CarCard({ car, accent = "navy" }: { car: Car; accent?: "navy" | 
       <div className="relative aspect-[4/3] overflow-hidden bg-white flex items-center justify-center">
         <img
           src={car.image}
-          alt={`${car.name} - AZR Rentcar Jakarta`}
+          alt={`${car.name} - AZR Rentcar Jabodetabek`}
           loading="lazy"
           width={1024}
           height={768}
