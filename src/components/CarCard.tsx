@@ -1,4 +1,4 @@
-import { Users, UserCheck } from "lucide-react";
+import { Users, UserCheck, KeyRound } from "lucide-react";
 
 export type Car = {
   name: string;
@@ -56,6 +56,10 @@ export function CarCard({ car, accent = "navy" }: { car: Car; accent?: "navy" | 
           >
             <UserCheck size={13} />
             Termasuk Driver Profesional
+          </span>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-destructive/10 text-destructive">
+            <KeyRound size={13} />
+            Tidak Menerima Lepas Kunci
           </span>
         </div>
 
