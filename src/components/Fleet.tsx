@@ -10,6 +10,7 @@ import zenix from "@/assets/car-zenix.jpg";
 import fortuner from "@/assets/car-fortuner.jpg";
 import pajero from "@/assets/car-pajero.jpg";
 import alphard from "@/assets/car-alphard.jpg";
+import alphardfacelift from "@/assets/car-alphard-facelift.jpg";
 
 const allInCars: Car[] = [
   { name: "New Avanza", seats: "7 Kursi", price: "Rp 800.000", overtime: "50rb/jam", image: avanza },
@@ -22,7 +23,7 @@ const allInCars: Car[] = [
   { name: "Innova Zenix Q", seats: "7 Kursi", price: "Rp 1.600.000", overtime: "100rb/jam", image: zenix },
   { name: "Fortuner", seats: "7 Kursi", price: "Rp 1.500.000", overtime: "100rb/jam", image: fortuner },
   { name: "New Pajero Sport Dakar", seats: "7 Kursi", price: "Rp 1.700.000", overtime: "100rb/jam", image: pajero },
-  { name: "Alphard Gen 3 Facelift", seats: "7 Kursi", price: "Rp 3.400.000", overtime: "150rb/jam", image: alphard, badge: "Luxury" },
+  { name: "Alphard Gen 3 Facelift", seats: "7 Kursi", price: "Rp 3.400.000", overtime: "150rb/jam", image: alphardfacelift, badge: "Luxury" },
   { name: "New Alphard Gen 4", seats: "7 Kursi", price: "Rp 4.500.000", overtime: "200rb/jam", image: alphard, badge: "Flagship" },
 ];
 
