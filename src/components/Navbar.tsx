@@ -34,7 +34,7 @@ export function Navbar() {
         <a href="#beranda" className="flex items-center gap-2.5">
           <img
             src={azrLogo}
-            alt="AZR Rentcar Jakarta — Sewa Mobil Mewah"
+            alt="AZR Rentcar Jabodetabek — Sewa Mobil Mewah"
             width={48}
             height={48}
             className={`w-10 h-10 sm:w-12 sm:h-12 object-contain transition-all ${
@@ -45,7 +45,7 @@ export function Navbar() {
           />
           <div className={`leading-tight ${scrolled ? "text-foreground" : "text-white"}`}>
             <div className="font-display font-semibold text-base sm:text-lg tracking-wide">AZR Rentcar</div>
-            <div className="text-[10px] sm:text-xs tracking-[0.25em] uppercase opacity-80">Jakarta</div>
+            <div className="text-[10px] sm:text-xs tracking-[0.25em] uppercase opacity-80">Jabodetabek</div>
           </div>
         </a>
 

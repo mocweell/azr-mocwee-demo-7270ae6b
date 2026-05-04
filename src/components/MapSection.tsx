@@ -34,7 +34,7 @@ export function MapSection() {
           >
             <div className="relative aspect-[16/11] sm:aspect-[16/9] w-full">
               <iframe
-                title="Lokasi AZR Rentcar Jakarta"
+                title="Lokasi AZR Rentcar Jabodetabek"
                 src={EMBED_SRC}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

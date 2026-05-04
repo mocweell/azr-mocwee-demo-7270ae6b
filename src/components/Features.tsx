@@ -9,7 +9,7 @@ const features = [
   {
     icon: UserCheck,
     title: "Driver Berpengalaman",
-    desc: "Sopir profesional, ramah, hafal jalan Jakarta dan sekitarnya. Berseragam rapi siap melayani.",
+    desc: "Sopir profesional, ramah, hafal jalan Jabodetabek dan sekitarnya. Berseragam rapi siap melayani.",
   },
   {
     icon: Droplets,

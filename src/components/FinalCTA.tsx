@@ -52,7 +52,7 @@ export function FinalCTA() {
 
         <p className="mt-7 max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-white/85 leading-relaxed">
           Dapatkan <strong className="text-accent">harga spesial weekday</strong> & free pickup
-          area Jakarta. Slot armada premium terbatas — amankan unit favorit Anda sekarang.
+          area Jabodetabek. Slot armada premium terbatas — amankan unit favorit Anda sekarang.
         </p>
 
         {/* Trust strip */}

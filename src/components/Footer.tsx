@@ -14,13 +14,13 @@ export function Footer() {
         <div className="flex items-center gap-3">
           <img
             src={azrLogo}
-            alt="AZR Rentcar Jakarta"
+            alt="AZR Rentcar Jabodetabek"
             width={48}
             height={48}
             className="w-12 h-12 object-contain [filter:brightness(0)_invert(1)] opacity-95"
           />
           <div>
-            <div className="font-display font-semibold">AZR Rentcar Jakarta</div>
+            <div className="font-display font-semibold">AZR Rentcar Jabodetabek</div>
             <div className="text-xs text-white/60">Premium Car Rental Service</div>
           </div>
         </div>

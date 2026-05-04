@@ -15,25 +15,25 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "AZR Rentcar Jakarta — Sewa Mobil Mewah + Driver Profesional" },
+      { title: "AZR Rentcar Jabodetabek — Sewa Mobil Mewah + Driver Profesional" },
       {
         name: "description",
         content:
-          "Sewa mobil mewah Jakarta dengan driver profesional. Unit 2023+: Avanza, Veloz, Innova Zenix, Fortuner, Alphard, Hiace Premio Luxury. Konsultasi WA 0855-9115-1510.",
+          "Sewa mobil mewah Jabodetabek dengan driver profesional. Unit 2023+: Avanza, Veloz, Innova Zenix, Fortuner, Alphard, Hiace Premio Luxury. Konsultasi WA 0855-9115-1510.",
       },
       {
         name: "keywords",
         content:
           "sewa mobil jakarta, rental mobil mewah, sewa alphard, sewa hiace, rental innova zenix, sewa mobil dengan driver, AZR Rentcar, rental mobil jabodetabek, sewa fortuner, luxury car rental jakarta",
       },
-      { name: "author", content: "AZR Rentcar Jakarta" },
+      { name: "author", content: "AZR Rentcar Jabodetabek" },
       { name: "robots", content: "index, follow" },
       { name: "geo.region", content: "ID-JK" },
-      { name: "geo.placename", content: "Jakarta" },
+      { name: "geo.placename", content: "Jabodetabek" },
       { name: "language", content: "Indonesian" },
       { name: "theme-color", content: "#0f1e3d" },
 
-      { property: "og:title", content: "AZR Rentcar Jakarta — Premium Car Rental + Driver" },
+      { property: "og:title", content: "AZR Rentcar Jabodetabek — Premium Car Rental + Driver" },
       {
         property: "og:description",
         content:
@@ -41,24 +41,24 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "id_ID" },
-      { property: "og:site_name", content: "AZR Rentcar Jakarta" },
+      { property: "og:site_name", content: "AZR Rentcar Jabodetabek" },
       { property: "og:url", content: "https://azr-rentcar.com" },
       { property: "og:image", content: "https://raw.githubusercontent.com/mocweell/azr-mocwee-demo-7270ae6b/refs/heads/main/public/og-banner.jpg?token=GHSAT0AAAAAAD4AM444YK2SBNW7SGPSTRKI2PVQ6DQ" },
       { property: "og:image:secure_url", content: "https://raw.githubusercontent.com/mocweell/azr-mocwee-demo-7270ae6b/refs/heads/main/public/og-banner.jpg?token=GHSAT0AAAAAAD4AM444YK2SBNW7SGPSTRKI2PVQ6DQ" },
       { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:width", content: "1536" },
       { property: "og:image:height", content: "1024" },
-      { property: "og:image:alt", content: "AZR Rentcar Jakarta — Solusi Sewa Mobil Tanpa Ribet" },
+      { property: "og:image:alt", content: "AZR Rentcar Jabodetabek — Solusi Sewa Mobil Tanpa Ribet" },
 
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "AZR Rentcar Jakarta — Sewa Mobil Mewah + Driver" },
+      { name: "twitter:title", content: "AZR Rentcar Jabodetabek — Sewa Mobil Mewah + Driver" },
       {
         name: "twitter:description",
         content:
-          "Unit 2023+, driver profesional, layanan rental mobil premium di Jakarta. Konsultasi via WhatsApp.",
+          "Unit 2023+, driver profesional, layanan rental mobil premium di Jabodetabek. Konsultasi via WhatsApp.",
       },
       { name: "twitter:image", content: "https://raw.githubusercontent.com/mocweell/azr-mocwee-demo-7270ae6b/refs/heads/main/public/og-banner.jpg?token=GHSAT0AAAAAAD4AM444YK2SBNW7SGPSTRKI2PVQ6DQ" },
-      { name: "twitter:image:alt", content: "AZR Rentcar Jakarta — Armada Premium" },
+      { name: "twitter:image:alt", content: "AZR Rentcar Jabodetabek — Armada Premium" },
     ],
     links: [
       { rel: "canonical", href: "https://azr-rentcar.com" },
@@ -75,15 +75,15 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "AutoRental",
-          name: "AZR Rentcar Jakarta",
+          name: "AZR Rentcar Jabodetabek",
           description:
-            "Penyedia jasa sewa mobil mewah dengan driver profesional di Jakarta. Unit 2023+ termasuk Alphard, Fortuner, Innova Zenix, dan Hiace Luxury.",
+            "Penyedia jasa sewa mobil mewah dengan driver profesional di Jabodetabek. Unit 2023+ termasuk Alphard, Fortuner, Innova Zenix, dan Hiace Luxury.",
           url: "https://azr-mocwee-demo.lovable.app",
           telephone: "+62-855-9115-1510",
-          areaServed: { "@type": "City", name: "Jakarta" },
+          areaServed: { "@type": "City", name: "Jabodetabek" },
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Jakarta",
+            addressLocality: "Jabodetabek",
             addressCountry: "ID",
           },
           priceRange: "$$",

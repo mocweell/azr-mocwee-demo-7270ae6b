@@ -9,7 +9,7 @@ export function Hero() {
     >
       <img
         src={heroImg}
-        alt="Toyota Alphard mewah AZR Rentcar Jakarta di depan hotel"
+        alt="Toyota Alphard mewah AZR Rentcar Jabodetabek di depan hotel"
         width={1920}
         height={1080}
         className="absolute inset-0 w-full h-full object-cover"
@@ -27,7 +27,7 @@ export function Hero() {
         >
           <span className="w-1.5 h-1.5 rounded-full bg-accent" />
           <span className="text-xs sm:text-sm tracking-[0.18em] uppercase text-accent">
-            Premium Car Rental Jakarta
+            Premium Car Rental Jabodetabek
           </span>
         </div>
 
@@ -45,7 +45,7 @@ export function Hero() {
           style={{ animationDelay: "0.3s" }}
         >
           Sewa mobil mewah unit terbaru 2023 ke atas untuk kebutuhan bisnis maupun keluarga
-          di Jakarta dan sekitarnya.
+          di Jabodetabek dan sekitarnya.
         </p>
 
         <div
