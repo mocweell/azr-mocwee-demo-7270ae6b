@@ -57,7 +57,7 @@ export function CarCard({ car, accent = "navy" }: { car: Car; accent?: "navy" | 
             <UserCheck size={13} />
             Termasuk Driver Profesional
           </span>
-          <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-destructive/10 text-destructive">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-muted text-muted-foreground">
             <KeyRound size={13} />
             Tidak Menerima Lepas Kunci
           </span>
