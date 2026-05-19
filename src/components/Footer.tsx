@@ -1,10 +1,10 @@
 import { Instagram } from "lucide-react";
 import Image from "next/image";
 
-// Panggil dari assets pakai relative path agar aman dari isu konfigurasi tsconfig/vite
-import azrLogo from "../assets/azr-logo.png";
-import logoBca from "../assets/logo-bca.png";
-import logoMandiri from "../assets/logo-mandiri.png";
+// Menggunakan alias @/ yang sudah pasti terbaca oleh Vercel
+import azrLogo from "@/assets/azr-logo.png";
+import logoBca from "@/assets/logo-bca.png";
+import logoMandiri from "@/assets/logo-mandiri.png";
 
 const waNumber = "6285591151510";
 const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
