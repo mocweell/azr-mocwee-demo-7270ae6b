@@ -7,10 +7,10 @@ const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
 const igLink = "https://www.instagram.com/azr.rentcar";
 
 export function Footer() {
-  // Kita bypass import esbuild dengan langsung menunjuk string path aset publik/lokal
-  const srcAzr = "/assets/azr-logo.png";
-  const srcBca = "/assets/logo-bca.png";
-  const srcMandiri = "/assets/logo-mandiri.png";
+  // MEMPERBAIKI VARIABEL: Mengambil string path asli dari folder src/assets
+  const srcAzr = require("@/assets/azr-logo.png")?.default?.src || require("@/assets/azr-logo.png");
+  const srcBca = require("@/assets/logo-bca.png")?.default?.src || require("@/assets/logo-bca.png");
+  const srcMandiri = require("@/assets/logo-mandiri.png")?.default?.src || require("@/assets/logo-mandiri.png");
 
   return (
     <footer className="bg-primary text-primary-foreground py-20">
