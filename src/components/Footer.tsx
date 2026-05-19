@@ -1,7 +1,4 @@
 import { Instagram } from "lucide-react";
-import Image from "next/image";
-
-// Menggunakan alias @/ yang sudah pasti terbaca oleh Vercel
 import azrLogo from "@/assets/azr-logo.png";
 import logoBca from "@/assets/logo-bca.png";
 import logoMandiri from "@/assets/logo-mandiri.png";
@@ -13,14 +10,19 @@ const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
 const igLink = "https://www.instagram.com/azr.rentcar";
 
 export function Footer() {
+  // Ambil URL string dari hasil import aset lokal Next.js
+  const srcAzr = typeof azrLogo === "object" ? (azrLogo as any).src : azrLogo;
+  const srcBca = typeof logoBca === "object" ? (logoBca as any).src : logoBca;
+  const srcMandiri = typeof logoMandiri === "object" ? (logoMandiri as any).src : logoMandiri;
+
   return (
     <footer className="bg-primary text-primary-foreground py-10">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
         
         {/* LOGO & BRAND */}
         <div className="flex items-center gap-3">
-          <Image
-            src={azrLogo}
+          <img
+            src={srcAzr}
             alt="AZR Rentcar Jabodetabek"
             width={48}
             height={48}
@@ -38,11 +40,9 @@ export function Footer() {
           
           {/* BCA */}
           <div className="flex items-center justify-center md:justify-start gap-2">
-            <Image 
-              src={logoBca} 
+            <img 
+              src={srcBca} 
               alt="Logo BCA" 
-              width={60} 
-              height={20}
               className="h-4 w-auto object-contain bg-white px-1 py-0.5 rounded-sm" 
             />
             <span>6890586161 <span className="text-white/60">a/n septian bagus k</span></span>
@@ -50,11 +50,9 @@ export function Footer() {
           
           {/* MANDIRI */}
           <div className="flex items-center justify-center md:justify-start gap-2">
-            <Image 
-              src={logoMandiri} 
+            <img 
+              src={srcMandiri} 
               alt="Logo Mandiri" 
-              width={60} 
-              height={20}
               className="h-4 w-auto object-contain bg-white px-1 py-0.5 rounded-sm" 
             />
             <span>1550013597011 <span className="text-white/60">a/n septian bagus k</span></span>
