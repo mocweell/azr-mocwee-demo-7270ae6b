@@ -1,5 +1,7 @@
 import { Instagram } from "lucide-react";
 import azrLogo from "@/assets/azr-logo.png";
+import logoBca from "@/assets/logo-bca.png";
+import logoMandiri from "@/assets/logo-mandiri.png";
 
 const waNumber = "6285591151510";
 const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
@@ -28,10 +30,28 @@ export function Footer() {
         </div>
 
         {/* REKENING PEMBAYARAN */}
-        <div className="text-xs md:text-sm text-white/80 space-y-1 border-t border-b border-white/10 md:border-none py-3 md:py-0 w-full md:w-auto">
+        <div className="text-xs md:text-sm text-white/80 space-y-2 border-t border-b border-white/10 md:border-none py-3 md:py-0 w-full md:w-auto">
           <p className="font-semibold text-white/90 mb-1">Rekening Kami:</p>
-          <p><span className="font-bold text-white">BCA</span> &bull; 6890586161 <span className="text-white/60">a/n septian bagus k</span></p>
-          <p><span className="font-bold text-white">MANDIRI</span> &bull; 1550013597011 <span className="text-white/60">a/n septian bagus k</span></p>
+          
+          {/* BCA */}
+          <div className="flex items-center justify-center md:justify-start gap-2">
+            <img 
+              src={logoBca} 
+              alt="Logo BCA" 
+              className="h-4 w-auto object-contain bg-white px-1 py-0.5 rounded-sm" 
+            />
+            <span>6890586161 <span className="text-white/60">a/n septian bagus k</span></span>
+          </div>
+          
+          {/* MANDIRI */}
+          <div className="flex items-center justify-center md:justify-start gap-2">
+            <img 
+              src={logoMandiri} 
+              alt="Logo Mandiri" 
+              className="h-4 w-auto object-contain bg-white px-1 py-0.5 rounded-sm" 
+            />
+            <span>1550013597011 <span className="text-white/60">a/n septian bagus k</span></span>
+          </div>
         </div>
 
         {/* SOSIAL MEDIA */}
