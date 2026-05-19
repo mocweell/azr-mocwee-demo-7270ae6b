@@ -1,7 +1,10 @@
 import { Instagram } from "lucide-react";
-import azrLogo from "@/assets/azr-logo.png";
-import logoBca from "@/assets/logo-bca.png";
-import logoMandiri from "@/assets/logo-mandiri.png";
+import Image from "next/image";
+
+// Panggil dari assets pakai relative path agar aman dari isu konfigurasi tsconfig/vite
+import azrLogo from "../assets/azr-logo.png";
+import logoBca from "../assets/logo-bca.png";
+import logoMandiri from "../assets/logo-mandiri.png";
 
 const waNumber = "6285591151510";
 const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
@@ -16,7 +19,7 @@ export function Footer() {
         
         {/* LOGO & BRAND */}
         <div className="flex items-center gap-3">
-          <img
+          <Image
             src={azrLogo}
             alt="AZR Rentcar Jabodetabek"
             width={48}
@@ -35,9 +38,11 @@ export function Footer() {
           
           {/* BCA */}
           <div className="flex items-center justify-center md:justify-start gap-2">
-            <img 
+            <Image 
               src={logoBca} 
               alt="Logo BCA" 
+              width={60} 
+              height={20}
               className="h-4 w-auto object-contain bg-white px-1 py-0.5 rounded-sm" 
             />
             <span>6890586161 <span className="text-white/60">a/n septian bagus k</span></span>
@@ -45,9 +50,11 @@ export function Footer() {
           
           {/* MANDIRI */}
           <div className="flex items-center justify-center md:justify-start gap-2">
-            <img 
+            <Image 
               src={logoMandiri} 
               alt="Logo Mandiri" 
+              width={60} 
+              height={20}
               className="h-4 w-auto object-contain bg-white px-1 py-0.5 rounded-sm" 
             />
             <span>1550013597011 <span className="text-white/60">a/n septian bagus k</span></span>
