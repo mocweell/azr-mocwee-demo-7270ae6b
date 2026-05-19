@@ -10,7 +10,9 @@ const igLink = "https://www.instagram.com/azr.rentcar";
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground py-10">
-      <div className="max-w-7xl mx-auto px-5 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+        
+        {/* LOGO & BRAND */}
         <div className="flex items-center gap-3">
           <img
             src={azrLogo}
@@ -25,6 +27,14 @@ export function Footer() {
           </div>
         </div>
 
+        {/* REKENING PEMBAYARAN */}
+        <div className="text-xs md:text-sm text-white/80 space-y-1 border-t border-b border-white/10 md:border-none py-3 md:py-0 w-full md:w-auto">
+          <p className="font-semibold text-white/90 mb-1">Rekening Kami:</p>
+          <p><span className="font-bold text-white">BCA</span> &bull; 6890586161 <span className="text-white/60">a/n septian bagus k</span></p>
+          <p><span className="font-bold text-white">MANDIRI</span> &bull; 1550013597011 <span className="text-white/60">a/n septian bagus k</span></p>
+        </div>
+
+        {/* SOSIAL MEDIA */}
         <div className="flex items-center gap-3">
           <a
             href={waLink}
@@ -48,7 +58,8 @@ export function Footer() {
           </a>
         </div>
 
-        <p className="text-sm text-white/70">
+        {/* COPYRIGHT */}
+        <p className="text-sm text-white/70 w-full md:w-auto md:border-none border-t border-white/5 pt-4 md:pt-0">
           © {new Date().getFullYear()} AZR Rentcar. Semua hak dilindungi.
         </p>
       </div>
