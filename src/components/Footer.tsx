@@ -1,8 +1,4 @@
 import { Instagram } from "lucide-react";
-import Image from "next/image";
-import azrLogo from "@/assets/azr-logo.png";
-import logoBca from "@/assets/logo-bca.png";
-import logoMandiri from "@/assets/logo-mandiri.png";
 
 const waNumber = "6285591151510";
 const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
@@ -11,13 +7,13 @@ const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
 const igLink = "https://www.instagram.com/azr.rentcar";
 
 export function Footer() {
-  // Ambil URL string dari hasil import aset lokal Next.js untuk tag img
-  const srcAzr = typeof azrLogo === "object" ? (azrLogo as any).src : azrLogo;
-  const srcBca = typeof logoBca === "object" ? (logoBca as any).src : logoBca;
-  const srcMandiri = typeof logoMandiri === "object" ? (logoMandiri as any).src : logoMandiri;
+  // Kita bypass import esbuild dengan langsung menunjuk string path aset publik/lokal
+  const srcAzr = "/assets/azr-logo.png";
+  const srcBca = "/assets/logo-bca.png";
+  const srcMandiri = "/assets/logo-mandiri.png";
 
   return (
-    <footer className="bg-primary text-primary-foreground py-20"> {/* Footer diperbesar dengan py-20 */}
+    <footer className="bg-primary text-primary-foreground py-20">
       <div className="max-w-7xl mx-auto px-5 sm:px-6">
         
         {/* SECTION 1: REKENING (DI ATAS) */}
@@ -88,3 +84,19 @@ export function Footer() {
               <a
                 href={igLink}
                 target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-white/10 hover:bg-pink-600 hover:text-white transition-all duration-300"
+              >
+                <Instagram size={22} />
+              </a>
+            </div>
+            <p className="text-xs text-white/40">
+              © {new Date().getFullYear()} AZR Rentcar Jabodetabek. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  );
+}
