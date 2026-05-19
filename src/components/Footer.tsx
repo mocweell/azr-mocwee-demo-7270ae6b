@@ -1,5 +1,10 @@
 import { Instagram } from "lucide-react";
 
+// Kembali ke import standar Next.js/React yang dijamin aman untuk compiler
+import azrLogo from "@/assets/azr-logo.png";
+import logoBca from "@/assets/logo-bca.png";
+import logoMandiri from "@/assets/logo-mandiri.png";
+
 const waNumber = "6285591151510";
 const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
   "Halo AZR Rentcar, saya ingin info & ketersediaan unit. Terima kasih.",
@@ -7,16 +12,16 @@ const waLink = `https://wa.me/${waNumber}?text=${encodeURIComponent(
 const igLink = "https://www.instagram.com/azr.rentcar";
 
 export function Footer() {
-  // MEMPERBAIKI VARIABEL: Mengambil string path asli dari folder src/assets
-  const srcAzr = require("@/assets/azr-logo.png")?.default?.src || require("@/assets/azr-logo.png");
-  const srcBca = require("@/assets/logo-bca.png")?.default?.src || require("@/assets/logo-bca.png");
-  const srcMandiri = require("@/assets/logo-mandiri.png")?.default?.src || require("@/assets/logo-mandiri.png");
+  // Mengekstrak properti string .src dari objek import bawaan compiler
+  const srcAzr = typeof azrLogo === "object" ? (azrLogo as any).src : azrLogo;
+  const srcBca = typeof logoBca === "object" ? (logoBca as any).src : logoBca;
+  const srcMandiri = typeof logoMandiri === "object" ? (logoMandiri as any).src : logoMandiri;
 
   return (
     <footer className="bg-primary text-primary-foreground py-20">
       <div className="max-w-7xl mx-auto px-5 sm:px-6">
         
-        {/* SECTION 1: REKENING (DI ATAS) */}
+        {/* SECTION 1: REKENING */}
         <div className="mb-16 pb-10 border-b border-white/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="text-center md:text-left">
@@ -27,8 +32,9 @@ export function Footer() {
             <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
               {/* Card BCA */}
               <div className="bg-white/5 border border-white/10 p-4 rounded-xl flex items-center gap-4 min-w-[280px]">
-                <div className="bg-white p-1.5 rounded-lg shrink-0">
-                  <img src={srcBca} alt="BCA" className="h-5 w-auto object-contain" />
+                {/* Mengunci porsi logo di dalam kotak putih agar ukurannya tidak melebar/kebesaran */}
+                <div className="bg-white px-2 py-1 rounded-lg shrink-0 w-16 h-8 flex items-center justify-center border border-slate-100">
+                  <img src={srcBca} alt="BCA" className="max-h-full max-w-full object-contain" />
                 </div>
                 <div>
                   <div className="text-[10px] uppercase tracking-wider text-white/40 font-bold">Nomor Rekening</div>
@@ -39,8 +45,9 @@ export function Footer() {
 
               {/* Card Mandiri */}
               <div className="bg-white/5 border border-white/10 p-4 rounded-xl flex items-center gap-4 min-w-[280px]">
-                <div className="bg-white p-1.5 rounded-lg shrink-0">
-                  <img src={srcMandiri} alt="Mandiri" className="h-5 w-auto object-contain" />
+                {/* Mengunci porsi logo di dalam kotak putih agar ukurannya tidak melebar/kebesaran */}
+                <div className="bg-white px-2 py-1 rounded-lg shrink-0 w-16 h-8 flex items-center justify-center border border-slate-100">
+                  <img src={srcMandiri} alt="Mandiri" className="max-h-full max-w-full object-contain" />
                 </div>
                 <div>
                   <div className="text-[10px] uppercase tracking-wider text-white/40 font-bold">Nomor Rekening</div>
@@ -52,10 +59,8 @@ export function Footer() {
           </div>
         </div>
 
-        {/* SECTION 2: UTAMA (LOGO, SOSMED, COPYRIGHT) */}
+        {/* SECTION 2: UTAMA */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-          
-          {/* BRANDING */}
           <div className="flex items-center gap-4">
             <img
               src={srcAzr}
@@ -68,7 +73,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* SOSIAL MEDIA & KONTAK */}
           <div className="flex flex-col items-center md:items-end gap-4">
             <div className="flex items-center gap-3">
               <a
